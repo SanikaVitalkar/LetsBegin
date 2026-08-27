@@ -1,0 +1,97 @@
+/* --- Global Styles --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Apply the light pink background color */
+    background-color: #ffe6e6; 
+    /* Use the modern, aesthetic font */
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 800px; /* Keeps the content from getting too wide */
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Space between sections */
+}
+/* --- Typography --- */
+h1 {
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    margin-top: 40px;
+    font-size: 3em; /* Big and centered */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2, h3 {
+    color: #444;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* --- The Card Container Style --- */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    /* Soft shadow for the minimal, floating look */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+}
+/* --- Details Section (Two columns) --- */
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px;
+}
+
+/* Make it stack vertically on small screens */
+@media (max-width: 600px) {
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* --- Footer & Pinterest Link --- */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.pinterest-link {
+    display: inline-block;
+    text-decoration: none;
+    /* Aesthetic button color */
+    background-color: #ffb3b3; 
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px; /* Pill shape button */
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255,179,179,0.3);
+}
+
+.pinterest-link:hover {
+    /* Slightly darker pink on hover */
+    background-color: #ff9999; 
+}
