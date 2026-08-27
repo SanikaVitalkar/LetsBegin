@@ -9,7 +9,7 @@ body {
     /* Apply the light pink background color */
     background-color: #ffe6e6; 
     /* Use the modern, aesthetic font */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Courier New', monospace;
     color: #555;
     line-height: 1.6;
     display: flex;
