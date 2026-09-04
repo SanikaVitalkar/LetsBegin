@@ -1,54 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanika's Profile</title>
-    <!-- Link to the new CSS file -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Link to Google Fonts for an aesthetic look -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanika Vitalkar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="main-container">
-        <!-- Name in Centre -->
-        <header>
-            <h1>Sanika Vitalkar🎀</h1>
-        </header>
+<nav class="topnav">
+  <span class="brand">Sanika</span>
+  <div class="navlinks">
+    <a href="#love">what i love</a>
+    <a href="#achievements">achievements</a>
+    <a href="#now">now</a>
+  </div>
+</nav>
 
-        <!-- About Me Section -->
-        <section class="card">
-            <h2>About Me✨</h2>
-            <p>Hello! Welcome to my little corner of the internet. I'm just starting my coding journey and learning how to build beautiful things with web technologies.</p>
-        </section>
+<!-- ============ INTRO ============ -->
+<header class="intro" id="intro">
+  <div class="intro-text">
+    <p class="greeting">Hey! Welcome, bro — Sanika this side.</p>
+    <h1>I'm Sanika Vitalkar,<br>an aspiring AI engineer.</h1>
+    <p class="intro-sub">This is a small corner of the internet where I keep the things I love, the things I've made, and the things I'm still figuring out.</p>
+  </div>
+  <div class="intro-photo pixel-corners">
+    <img src="images/intro.jpg" alt="Sanika Vitalkar">
+    <!-- Replace images/intro.jpg with your photo. Keep the filename or update the src above. -->
+  </div>
+</header>
 
-<!-- Details Section (Hobbies, Movies) -->
-        <section class="details-grid">
-            <div class="card">
-                <h3>Hobbies</h3>
-                <ul>
-                    <li>Coding 💻</li>
-                    <li>Reading📖</li>
-                    <li>Journaling📝</li>
-                    <li>Watching Movies🎬</li>
-                </ul>
-            </div>
-            
-            <div class="card">
-                <h3>Fav Movies</h3>
-                <ol>
-                    <li>Wake up sid!</li>
-                    <li>12th Fail</li>
-                    <li>Dark series</li>
-                </ol>
-            </div>
-        </section>
+<!-- ============ WHAT I LOVE ============ -->
+<section class="love" id="love">
+  <h2><span class="pixel-star" aria-hidden="true"></span>What I absolutely love</h2>
 
-        <!-- Pinterest Link -->
-        <footer class="footer">
-            <a href="https://pin.it/4tA5A5gts" target="_blank" class="pinterest-link">
-                Follow me on Pinterest ✨
-            </a>
-        </footer>
+  <div class="love-item">
+    <h3>Journaling</h3>
+    <p>It was during lockdown that I discovered I truly love journaling and creativity. What started as a way to pass the time turned into a habit I still keep.</p>
+    <div class="photo-strip">
+      <img class="pixel-corners" src="images/journal-1.jpg" alt="Journal page">
+      <img class="pixel-corners" src="images/journal-2.jpg" alt="Journal page">
+      <img class="pixel-corners" src="images/journal-3.jpg" alt="Journal page">
+      <!-- Add as many images/journal-*.jpg files as you like, and copy this <img> line for each -->
+    </div>
+  </div>
+
+  <div class="love-item">
+    <h3>Reading books</h3>
+    <p>I read a lot of books, mainly fiction. Here's everything I've made my way through so far:</p>
+    <ul class="stack-list">
+      <li>Book title one</li>
+      <li>Book title two</li>
+      <li>Book title three</li>
+      <!-- Add one <li> per book -->
+    </ul>
+  </div>
+
+  <div class="love-item">
+    <h3>Watching movies &amp; shows</h3>
+    <p>I'm not exactly a cinephile, but I've watched more shows, sitcoms, movies, and real-life documentaries than I can count. A few favourites:</p>
+    <ul class="stack-list">
+      <li>Show / movie one</li>
+      <li>Show / movie two</li>
+      <li>Show / movie three</li>
+      <!-- Add one <li> per favourite -->
+    </ul>
+  </div>
+
+  <div class="love-item">
+    <h3>Photography &amp; visual content</h3>
+    <p>I love capturing photos and putting together visually pleasing content. Most of it lives on my Pinterest.</p>
+    <a class="pinterest-link" href="https://pinterest.com/yourusername" target="_blank" rel="noopener">View my Pinterest &rarr;</a>
+    <!-- Replace the href above with your actual Pinterest URL -->
+  </div>
+
+  <div class="love-item">
+    <h3>Public speaking</h3>
+    <p>I've been anchoring since I was a child, and I've anchored many events in college. I'm also a member of Toastmasters, where I keep sharpening this side of me.</p>
+  </div>
+</section>
+
+<!-- ============ ACHIEVEMENTS ============ -->
+<section class="achievements" id="achievements">
+  <h2><span class="pixel-star" aria-hidden="true"></span>My achievements so far</h2>
+
+  <div class="achievement">
+    <p>Singing was my passion — I won several first prizes in singing competitions, and I gave and completed my first singing exam successfully.</p>
+  </div>
+
+  <div class="achievement achievement-with-image">
+    <p>Topped my engineering first year with a 9.65 CGPA.</p>
+    <img class="pixel-corners" src="images/topper.jpg" alt="Receiving the topper recognition">
+    <!-- Replace images/topper.jpg with your photo from that recognition -->
+  </div>
+
+  <div class="achievement">
+    <p>Part of Toastmasters, where I won the Humorous Speech Contest — at both the area and club level.</p>
+  </div>
+</section>
+
+<!-- ============ NOW ============ -->
+<section class="now" id="now">
+  <p>I am still learning, evolving, and discovering.</p>
+</section>
+
+<footer>
+  <p>&copy; <span id="year"></span> Sanika Vitalkar</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
